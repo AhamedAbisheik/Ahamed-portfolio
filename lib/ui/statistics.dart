@@ -1,3 +1,4 @@
+import 'package:ahamedabisheik/config/AppTextStyle.dart';
 import 'package:flutter/material.dart';
 
 import '../data/projects.dart';
@@ -21,7 +22,7 @@ class Statistics extends StatelessWidget {
           _buildStatistic(context, 'icons/menu.png', '${PROJECTS.length}+',
               'Projects Done'),
           _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
-          _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+         // _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
         ]),
       ),
       mobileScreen: Container(
@@ -40,7 +41,7 @@ class Statistics extends StatelessWidget {
             const SizedBox(height: 50),
             _buildStatistic(context, 'icons/happy.png', '50+', 'Happy Clients'),
             const SizedBox(height: 50),
-            _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
+          //  _buildStatistic(context, 'icons/coffee.png', '∞', 'Coffee Cups'),
           ],
         ),
       ),
@@ -57,20 +58,32 @@ class Statistics extends StatelessWidget {
           const SizedBox(height: 5),
           Text(
             total,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 50,
-              fontWeight: FontWeight.w800,
-            ),
+            // style: TextStyle(
+            //   color: Colors.white,
+            //   fontSize: 50,
+            //   fontWeight: FontWeight.w800,
+            // ),
+                          style: AppTextStyle.instance.mainTextStyle(
+    fSize: 50,
+    fWeight: FontWeight.w800,
+    color: Colors.amber,
+    // optional
+  ),
           ),
           const SizedBox(height: 5),
           Text(
             description,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
-            ),
+            // style: TextStyle(
+            //   color: Colors.white,
+            //   fontSize: 20,
+            //   fontWeight: FontWeight.w700,
+            // ),
+                                      style: AppTextStyle.instance.mainTextStyle(
+    fSize: 20,
+    fWeight: FontWeight.w800,
+    color: Colors.blue,
+    // optional
+  ),
           ),
         ],
       ),

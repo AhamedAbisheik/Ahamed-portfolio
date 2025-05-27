@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ahamedabisheik/config/AppTextStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:ahamedabisheik/ui/responsive_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -148,7 +149,7 @@ class _HomeState extends State<Home> {
                         //   vertical: 15,
                         // ),
                           style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.green, // Background color
+    backgroundColor: AppColors.yellow, // Background color
     overlayColor: Colors.white,   // Text color
     padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
     shape: RoundedRectangleBorder(
@@ -157,10 +158,17 @@ class _HomeState extends State<Home> {
   ),
                         child: Text(
                           'Contact Me',
-                          style: TextStyle(
-                              color: Colors.white, fontWeight: FontWeight.bold),
-                        ),
-                      ),
+                           style: AppTextStyle.instance.mainTextStyle(
+    fSize: 20,
+    fWeight: FontWeight.bold,
+    color: Colors.black,
+    // optional
+  ),
+  )
+                        //   style: TextStyle(
+                        //       color: Colors.white, fontWeight: FontWeight.bold),
+                        // ),
+                      )
                     ],
                   ),
                   SizedBox(width: MediaQuery.of(context).size.width * .15),

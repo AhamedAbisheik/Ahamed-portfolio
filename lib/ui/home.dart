@@ -226,7 +226,7 @@ class _HomeState extends State<Home> {
                 ListTile(
                   onTap: _scrollToRecentProjects,
                   title: Text(
-                    'Portfolio',
+                    'My Projects',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -240,9 +240,23 @@ class _HomeState extends State<Home> {
                     //   horizontal: 40,
                     //   vertical: 15,
                     // ),
+                                              style: ElevatedButton.styleFrom(
+    backgroundColor: AppColors.yellow, // Background color
+    overlayColor: Colors.white,   // Text color
+    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(10.0),
+    ),
+  ),
                     child: Text(
                       'Contact Me',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                     // style: TextStyle(fontWeight: FontWeight.bold),
+                                   style: AppTextStyle.instance.mainTextStyle(
+    fSize: 18,
+    fWeight: FontWeight.bold,
+    color: Colors.black,
+    // optional
+  ),
                     ),
                   ),
                 ),

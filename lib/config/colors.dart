@@ -6,6 +6,7 @@ mixin AppColors {
   static final black = Colors.black87;
   static final blue = Colors.blueAccent;
   static final green = Colors.green;
+  static final red = Colors.red;
   static final white = Colors.white;
   static final greyLight = Colors.grey[100];
 }

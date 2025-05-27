@@ -1,3 +1,4 @@
+import 'package:ahamedabisheik/config/AppTextStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -94,6 +95,14 @@ class MyProjects extends StatelessWidget {
                           onPressed: () {
                             launch(project.url!);
                           },
+                                                    style: ElevatedButton.styleFrom(
+    backgroundColor: AppColors.green, // Background color
+    overlayColor: Colors.white,   // Text color
+    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(8.0),
+    ),
+  ),
                        //   color: AppColors.yellow,
                         //  textColor: AppColors.yellow,
                           // borderSide: BorderSide(
@@ -107,7 +116,12 @@ class MyProjects extends StatelessWidget {
                           // shape: RoundedRectangleBorder(
                           //   borderRadius: BorderRadius.circular(20),
                           // ),
-                          child: Text('Visit'),
+                          child: Text('Visit',              style: AppTextStyle.instance.mainTextStyle(
+    fSize: 15,
+    fWeight: FontWeight.w500,
+    color: Colors.white,
+    // optional
+  ),),
                         ),
                       ],
                     ),

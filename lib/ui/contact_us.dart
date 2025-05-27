@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:ahamedabisheik/config/AppTextStyle.dart';
 import 'package:flutter/material.dart';
 import 'package:ahamedabisheik/ui/icon.dart';
 import 'package:mailto/mailto.dart';
@@ -47,19 +48,19 @@ class _ContactUsState extends State<ContactUs> {
                     children: [
                       _buildContactInfo(
                         'icons/email.png',
-                        'Mail Us:',
+                        'E-Mail:',
                         AppConstants.mail,
                       ),
                       const SizedBox(height: 20),
                       _buildContactInfo(
                         'icons/call.png',
-                        'Call Us:',
+                        'Call:',
                         AppConstants.phone,
                       ),
                       const SizedBox(height: 20),
                       _buildContactInfo(
                         'icons/pin.png',
-                        'Visit Us:',
+                        'Location:',
                         AppConstants.location,
                       ),
                     ],
@@ -97,19 +98,19 @@ class _ContactUsState extends State<ContactUs> {
                   children: [
                     _buildContactInfo(
                       'icons/email.png',
-                      'Mail Us:',
+                      'E-Mail:',
                       AppConstants.mail,
                     ),
                     const SizedBox(height: 20),
                     _buildContactInfo(
                       'icons/call.png',
-                      'Call Us:',
+                      'Call:',
                       AppConstants.phone,
                     ),
                     const SizedBox(height: 20),
                     _buildContactInfo(
                       'icons/pin.png',
-                      'Visit Us:',
+                      'Location:',
                       AppConstants.location,
                     ),
                   ],
@@ -136,15 +137,27 @@ class _ContactUsState extends State<ContactUs> {
             children: [
               Text(
                 title,
-                style: TextStyle(
-                  color: AppColors.black,
-                  fontWeight: FontWeight.bold,
-                ),
+                // style: TextStyle(
+                //   color: AppColors.black,
+                //   fontWeight: FontWeight.bold,
+                // ),
+                              style: AppTextStyle.instance.mainTextStyle(
+    fSize: 18,
+    fWeight: FontWeight.w700,
+    color: Colors.black,
+    // optional
+  ),
               ),
               const SizedBox(height: 5),
               Text(
                 content,
-                style: TextStyle(color: AppColors.black.withOpacity(.7)),
+                                              style: AppTextStyle.instance.mainTextStyle(
+    fSize: 15,
+    fWeight: FontWeight.w500,
+    color: Colors.black,
+    // optional
+  ),
+               // style: TextStyle(color: AppColors.black.withOpacity(.7)),
               ),
             ],
           )
@@ -223,7 +236,20 @@ class _ContactUsState extends State<ContactUs> {
                 // padding:
                 //     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                 onPressed: _sendMail,
-                child: Text('Send'),
+                                                                    style: ElevatedButton.styleFrom(
+    backgroundColor: AppColors.red, // Background color
+    overlayColor: Colors.white,   // Text color
+    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(8.0),
+    ),
+  ),
+                child: Text('Send',              style: AppTextStyle.instance.mainTextStyle(
+    fSize: 15,
+    fWeight: FontWeight.bold,
+    color: Colors.white,
+    // optional
+  ),),
               ),
             ],
           ),

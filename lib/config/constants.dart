@@ -13,7 +13,7 @@ mixin AppConstants {
   static final String twitter = 'https://twitter.com/';
 
   static final String facebook =
-      'https://www.facebook.com/';
+      'https://www.facebook.com//';
 
   static final String cv = 'YOUR-CV-URL'; // TODO
 }

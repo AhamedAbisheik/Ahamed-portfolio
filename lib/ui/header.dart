@@ -8,7 +8,7 @@ import '../config/colors.dart';
 
 class Header extends StatelessWidget {
   final String _name = "Ahamed Abisheik";
-  final String _job = "Mobile Developer";
+  final String _job = "Mobile App Developer";
   final String _description =
       "I am developer has around 2+ years experience developing mobile applications, using Flutter and Dart.";
 

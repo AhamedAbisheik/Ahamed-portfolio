@@ -55,12 +55,12 @@ class About extends StatelessWidget {
                           //       color: Colors.black.withOpacity(.7),
                           //       fontSize: 17,
                           //     ),
-                                                     style: AppTextStyle.instance.mainTextStyle(
-    fSize: 17,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),
+                          style: AppTextStyle.instance.mainTextStyle(
+                            fSize: 17,
+                            fWeight: FontWeight.bold,
+                            color: Colors.black,
+                            // optional
+                          ),
                         ),
                         const SizedBox(height: 30),
                         Row(
@@ -74,45 +74,54 @@ class About extends StatelessWidget {
                             //   child: Text('HIRE ME NOW'),
                             // ),
                             ElevatedButton(
-  onPressed: () {},
-  style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
-  child: Text('HIRE ME NOW',                            style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
-),
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    AppColors.yellow, // Background color
+                                overlayColor: Colors.white, // Text color
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 30, vertical: 20),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                              child: Text(
+                                'HIRE ME NOW',
+                                style: AppTextStyle.instance.mainTextStyle(
+                                  fSize: 18,
+                                  fWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  // optional
+                                ),
+                              ),
+                            ),
 
                             const SizedBox(width: 20),
                             ElevatedButton(
-
                               onPressed: _downloadCV,
-                          style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
-                           //   color: AppColors.black,
-                          //    textColor: Colors.white,
-                           //   padding: const EdgeInsets.symmetric(
-                           //       horizontal: 30, vertical: 20),
-                              child: Text('VIEW RESUME',                            style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    AppColors.yellow, // Background color
+                                overlayColor: Colors.white, // Text color
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 30, vertical: 20),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                              //   color: AppColors.black,
+                              //    textColor: Colors.white,
+                              //   padding: const EdgeInsets.symmetric(
+                              //       horizontal: 30, vertical: 20),
+                              child: Text(
+                                'VIEW RESUME',
+                                style: AppTextStyle.instance.mainTextStyle(
+                                  fSize: 18,
+                                  fWeight: FontWeight.bold,
+                                  color: Colors.black,
+                                  // optional
+                                ),
+                              ),
                             ),
                           ],
                         ),
@@ -122,30 +131,27 @@ class About extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 100),
-              Text('MY SKILLS',                                                      style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),
-              
-              
-               ),
+              Text(
+                'MY SKILLS',
+                style: AppTextStyle.instance.mainTextStyle(
+                  fSize: 18,
+                  fWeight: FontWeight.bold,
+                  color: Colors.black,
+                  // optional
+                ),
+              ),
               // Text('MY SKILLS', style: AppStyles.title,
-              
-              
+
               //  ),
               Container(width: 100, height: 2, color: AppColors.yellow),
               const SizedBox(height: 3),
               Container(width: 75, height: 2, color: AppColors.yellow),
               const SizedBox(height: 50),
               Wrap(
-                
                 spacing: 25,
                 runSpacing: 25,
                 runAlignment: WrapAlignment.spaceBetween,
                 children: SKILLS.map(_buildSkill).toList(),
-                
               ),
             ],
           ),
@@ -181,12 +187,12 @@ class About extends StatelessWidget {
               ),
               Text(
                 _description,
-                                                                     style: AppTextStyle.instance.mainTextStyle(
-    fSize: 17,
-    fWeight: FontWeight.w500,
-    color: Colors.black,
-    // optional
-  ),
+                style: AppTextStyle.instance.mainTextStyle(
+                  fSize: 17,
+                  fWeight: FontWeight.w500,
+                  color: Colors.black,
+                  // optional
+                ),
                 // style: Theme.of(context).textTheme.bodySmall!.copyWith(
                 //       color: Colors.black.withOpacity(.7),
                 //       fontSize: 13,
@@ -203,52 +209,63 @@ class About extends StatelessWidget {
               //   child: Text('HIRE ME NOW'),
               // ),
               ElevatedButton(
-  onPressed: () {},
-  style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
-  child: Text('HIRE ME NOW',                            style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
-),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.yellow, // Background color
+                  overlayColor: Colors.white, // Text color
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+                child: Text(
+                  'HIRE ME NOW',
+                  style: AppTextStyle.instance.mainTextStyle(
+                    fSize: 18,
+                    fWeight: FontWeight.bold,
+                    color: Colors.black,
+                    // optional
+                  ),
+                ),
+              ),
 
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: _downloadCV,
-                                          style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.yellow, // Background color
+                  overlayColor: Colors.white, // Text color
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
                 // color: AppColors.black,
                 // textColor: Colors.white,
                 // padding:
                 //     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-                child: Text('VIEW RESUME',style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
+                child: Text(
+                  'VIEW RESUME',
+                  style: AppTextStyle.instance.mainTextStyle(
+                    fSize: 18,
+                    fWeight: FontWeight.bold,
+                    color: Colors.black,
+                    // optional
+                  ),
+                ),
               ),
               const SizedBox(height: 50),
-              Text('MY SKILLS', style: AppTextStyle.instance.mainTextStyle(
-    fSize: 15,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
+              Text(
+                'MY SKILLS',
+                style: AppTextStyle.instance.mainTextStyle(
+                  fSize: 15,
+                  fWeight: FontWeight.bold,
+                  color: Colors.black,
+                  // optional
+                ),
+              ),
               // Text('MY SKILLS', style: AppStyles.title),
               Container(width: 75, height: 2, color: AppColors.yellow),
               const SizedBox(height: 3),

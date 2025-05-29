@@ -151,7 +151,7 @@ class _HomeState extends State<Home> {
                           style: ElevatedButton.styleFrom(
     backgroundColor: AppColors.yellow, // Background color
     overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(8.0),
     ),
@@ -159,8 +159,8 @@ class _HomeState extends State<Home> {
                         child: Text(
                           'Contact Me',
                            style: AppTextStyle.instance.mainTextStyle(
-    fSize: 20,
-    fWeight: FontWeight.bold,
+    fSize: 18,
+    fWeight: FontWeight.w700,
     color: Colors.black,
     // optional
   ),

@@ -56,20 +56,24 @@ class Header extends StatelessWidget {
                 // padding:
                 //     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                 onPressed: _downloadCV,
-                                          style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
-                child: Text('Download CV',                           style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.yellow, // Background color
+                  overlayColor: Colors.white, // Text color
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+                child: Text(
+                  'Download CV',
+                  style: AppTextStyle.instance.mainTextStyle(
+                    fSize: 18,
+                    fWeight: FontWeight.bold,
+                    color: Colors.black,
+                    // optional
+                  ),
+                ),
               ),
               const SizedBox(height: 100),
             ],
@@ -119,20 +123,24 @@ class Header extends StatelessWidget {
                   // padding:
                   //     const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
                   onPressed: _downloadCV,
-                          style: ElevatedButton.styleFrom(
-    backgroundColor: AppColors.yellow, // Background color
-    overlayColor: Colors.white,   // Text color
-    padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
-    shape: RoundedRectangleBorder(
-      borderRadius: BorderRadius.circular(8.0),
-    ),
-  ),
-                  child: Text('Download CV',                           style: AppTextStyle.instance.mainTextStyle(
-    fSize: 18,
-    fWeight: FontWeight.bold,
-    color: Colors.black,
-    // optional
-  ),),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.yellow, // Background color
+                    overlayColor: Colors.white, // Text color
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 30, vertical: 20),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                  ),
+                  child: Text(
+                    'Download CV',
+                    style: AppTextStyle.instance.mainTextStyle(
+                      fSize: 18,
+                      fWeight: FontWeight.bold,
+                      color: Colors.black,
+                      // optional
+                    ),
+                  ),
                 ),
                 const SizedBox(height: 100),
               ],
